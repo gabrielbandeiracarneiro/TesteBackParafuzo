@@ -17,9 +17,16 @@ O desafio consiste em:
 
 ## Instalação
 
-
+### Docker
 ```sh
-$ docker-compose build 
 $ docker-compose up
 ```
 
+### rails
+```sh
+#Banco de dados
+$ rails db:create 
+$ rails db:migrate
+#Rodando
+$ rails s
+```

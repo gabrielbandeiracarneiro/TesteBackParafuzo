@@ -1,4 +1,4 @@
-FROM ruby:3.0.2-alpine
+FROM ruby:2.7.4-alpine
 
 MAINTAINER Gabriel Bandeira <gabrielbandeiracarneiro@gmail.com>
 
@@ -30,9 +30,8 @@ RUN addgroup -S app && adduser -S app -G app -h /app
 RUN chown -R app.app /app 
 RUN chown -R app.app /usr/local/bundle 
 RUN apk del build-base yarn
-RUN rails db:create
-RUN rails g model Parking plate:string:index reservation:string time:string paid:boolean left:boolean entryDate:datetime paidDate:datetime exitDate:datetime
-RUN rails db:migrate
 USER app
+RUN rails db:create
+RUN rails db:migrate
 
 CMD puma -C config/puma.rb

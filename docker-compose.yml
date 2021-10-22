@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+
+  backend:
+    build: .
+    environment:
+      - "DOCKER_REGISTRY_URL=http://backend:8000"
+      - "ENABLE_DELETE_IMAGES=true"
+      - "PUBLIC_REGISTRY_URL=localhost:8000"
+    ports:
+      - "8000:8000"

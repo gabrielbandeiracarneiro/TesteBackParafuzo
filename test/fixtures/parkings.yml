@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plate: MyString
+  reservation: MyString
+  time: MyString
+  paid: false
+  left: false
+  entryDate: 2021-10-22 15:36:03
+  paidDate: 2021-10-22 15:36:05
+  exitDate: 2021-10-22 15:36:05
+
+two:
+  plate: MyString
+  reservation: MyString
+  time: MyString
+  paid: false
+  left: false
+  entryDate: 2021-10-22 15:36:03
+  paidDate: 2021-10-22 15:36:05
+  exitDate: 2021-10-22 15:36:05
